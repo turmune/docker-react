@@ -11,6 +11,7 @@ script:
   
 deploy:
   provider: elasticbeanstalk
+  skip_cleanup: true
   region: "us-west-2"
   app: "docker"
   env: "Docker-env"
